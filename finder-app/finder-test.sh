@@ -1,6 +1,4 @@
 #!/bin/sh
-# Tester script for assignment 1 and assignment 2
-# Author: Siddhant Jajoo
 
 set -e
 set -u
@@ -31,9 +29,6 @@ echo "Writing ${NUMFILES} files containing string ${WRITESTR} to ${WRITEDIR}"
 rm -rf "${WRITEDIR}"
 mkdir -p "$WRITEDIR"
 
-#The WRITEDIR is in quotes because if the directory path consists of spaces, then variable substitution will consider it as multiple argument.
-#The quotes signify that the entire string in WRITEDIR is a single string.
-#This issue can also be resolved by using double square brackets i.e [[ ]] instead of using quotes.
 if [ -d "$WRITEDIR" ]
 then
 	echo "$WRITEDIR created"

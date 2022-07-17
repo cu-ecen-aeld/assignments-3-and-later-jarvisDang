@@ -11,19 +11,6 @@
 #define ARGUMENTS 3
 #define MODE 0644
 
-/**
- * @brief   :   Main entry point to the application
- *
- *              This function prints writes specified string into given file path
- *              
- * @param   :   argv[1] - path of the file
- *				argv[2] - tring to be written
- *
- * @return  :   0
- 
- * @note	:	else statements are not needed after if since we are exiting on an error
- * 
-*/
 int main(int argc, char *argv[])
 {
 
